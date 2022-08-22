@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_60mdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        diagonal:civ_border_color="@color/white"
+        diagonal:civ_border_width="5dp"
+        diagonal:layout_constraintStart_toStartOf="@+id/linearLayout"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14font_mdp"
+        diagonal:layout_constraintBottom_toTopOf="@+id/timeS"
+        diagonal:layout_constraintStart_toEndOf="@+id/profile"
+        diagonal:layout_constraintTop_toTopOf="@+id/profile"
+        diagonal:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/timeS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/profile"
+        diagonal:layout_constraintStart_toStartOf="@+id/name"
+        diagonal:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/followButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/follow_btn_bg"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Follow"
+        android:textColor="@color/white"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/profile"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintTop_toTopOf="@+id/profile"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342127439898",
+    "project_id": "tasocialapp",
+    "storage_bucket": "tasocialapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342127439898:android:77f9f1fc075516cd7e21a3",
+        "android_client_info": {
+          "package_name": "com.example.tasocialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342127439898-fbuaregc02arm7e8hid5ufb4ev2vh4p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1DV0gzXbqkbhDmNl7kAjFTiXV1BuztzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342127439898-fbuaregc02arm7e8hid5ufb4ev2vh4p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
