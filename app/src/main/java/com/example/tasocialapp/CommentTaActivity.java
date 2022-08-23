@@ -212,7 +212,6 @@ public class CommentTaActivity extends AppCompatActivity {
 
 
     // to close comment activity from the toolbar
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         finish();
